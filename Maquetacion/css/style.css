@@ -1,64 +1,116 @@
 * {
   box-sizing: border-box; 
  }
+ header{
+  background: #25426B;
+  height: 8.9%;
+  width: auto;
+  display: flex;
+ justify-content: center;
+ padding: 5px;
+ }
  body {
    background-image: url(../img/background.png);
    background-repeat: no-repeat;  
    background-size: cover;
    margin: 0;    
  } 
+ @media only screen and (min-width: 600px) {
+   #content{
+     width: 100%;
+     font-size: 70%;
+     padding: 0px;
+   }
+   #contact{
+    width: 100%;
+     padding: 0%;
+   }
+   .mailto{
+     padding: 0%;
+   }
+   .phoneto{
+     padding: 0%;
+   }
+   #main{
+     padding: 0px;
+     width: 100%;
+   }
+ }
  #main {
    display: flex;
    justify-content: center;
    flex-direction: column;
    align-items: center;
-   padding: 60px;
+   padding: 2%;
+   font-family: 'Century Gothic';
  }
   #content {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 40%;
     height: 25%;
-    border-radius: 10px;
     box-shadow: 0 0 15px #ddd;
     background-color: #ffffff;
     text-align: center;
     padding: 30px;
  }
-  #contact{
-    display: flex;
-    justify-content: space-around;
+ .ico{
+   width: 24px ;
+   height: 24px ;
  }
  #title{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Century;
+  color: #25426B;
+  font-size: 200%;
+  font-family: 'Century Gothic';
+  font-weight: lighter;
+ }
+ #messageTitle{
+   font-family: 'Century Gothic';
+   font-weight: bolder;
+   font-size: 150%;
+   width: 90%;
+ }
+ #email{
+   color: #707070;
+ }
+ #message{
+  color: #707070;
+  width: 60%;
+ }
+ #numberB{
+   color: #B1B2B1;
+   font-size: 90%;
+   font-size-adjust: initial;
  }
  #separator{
   height:1px; 
   width: 80%;
-  border:none; 
-  color:rgb(126, 125, 125); 
-  background-color:rgb(126, 125, 125);
+  color:rgb(155, 155, 155); 
+  border:1px solid rgba(221, 221, 221, 0.788);
  }
- #main > nav, 
- #main > aside {
-   flex: 0 0 20vw;
-   background: none;
- }
- #main > nav {
-   order: -1;
- } 
- footer{
-  height: 17.3%;
-  width: 100%;
+ #contact{
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffffff;
-  border-top: rgb(160, 159, 159);
- } 
+  justify-content: space-around;
+  width: 100%;
+}
+ .mailto{
+   display: flex;
+   align-items: center;
+   padding: 10px;
+ }
+ .phoneto{
+   padding: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   flex-direction: row;
+ }
+ #numberB{
+  margin:-2.5% 0;
+ }
  #logoDown{
   width: 112.13px;
   height: 84.16px;
@@ -67,14 +119,13 @@
   width: 112.13px;
   height: 84.16px;
 }
- article, nav, aside {
-   padding: 1em;
- }
- header{
-   background: #25426B;
-   height: 8.9%;
-   width: 100%;
-   display: flex;
+footer{
+  height: 17.3%;
+  width: auto;
+  display: flex;
   justify-content: center;
-  padding: 5px;
- }
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-top: 3px solid rgb(160, 159, 159) ;
+ }  
