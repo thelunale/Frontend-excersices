@@ -15,7 +15,7 @@
    background-size: cover;
    margin: 0;    
  } 
- @media only screen and (min-width: 600px) {
+ @media only screen and (max-width: 600px) {
    #content{
      width: 100%;
      font-size: 70%;
@@ -49,8 +49,8 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 40%;
-    height: 25%;
+    width: 637px;
+    height: 430px;
     box-shadow: 0 0 15px #ddd;
     background-color: #ffffff;
     text-align: center;
@@ -63,7 +63,7 @@
  #title{
   font-family: Century;
   color: #25426B;
-  font-size: 200%;
+  font-size: 80px;
   font-family: 'Century Gothic';
   font-weight: lighter;
  }
@@ -75,6 +75,7 @@
  }
  #email{
    color: #707070;
+   text-decoration: underline;
  }
  #message{
   color: #707070;
@@ -110,6 +111,7 @@
  }
  #numberB{
   margin:-2.5% 0;
+  font-weight: lighter;
  }
  #logoDown{
   width: 112.13px;
@@ -120,12 +122,15 @@
   height: 84.16px;
 }
 footer{
-  height: 17.3%;
-  width: auto;
+  height: 222px;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
   border-top: 3px solid rgb(160, 159, 159) ;
+  position: bottom;
+  bottom: 0;
+  left: 0;
  }  
